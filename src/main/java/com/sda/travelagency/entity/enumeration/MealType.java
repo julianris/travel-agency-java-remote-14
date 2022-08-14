@@ -9,7 +9,7 @@ public enum MealType {
     HB("breakfast and diner"),
     ALL_INCLUSIVE("all food and drinks");
 
-    private String mealDescription;
+    private final String mealDescription;
 
     MealType(String mealDescription) {
         this.mealDescription = mealDescription;
