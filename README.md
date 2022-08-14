@@ -75,7 +75,7 @@
     - create trip entity
       - tripStartDate
       - tripEndDate
-      - destination (clas)
+      - destination (class)
         - country
         - city
       - price

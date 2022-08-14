@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
@@ -26,5 +27,11 @@ public class Trip {
     PaymentType paymentType;
 
     MealType mealType;
+
+    HotelFacilities hotelFacilities;
+
+    List<String> photos;
+
+
 
 }
