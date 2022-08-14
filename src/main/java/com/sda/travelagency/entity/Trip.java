@@ -1,15 +1,13 @@
 package com.sda.travelagency.entity;
 
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @Data
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@NoArgsConstructor
+@AllArgsConstructor (access = AccessLevel.PRIVATE)
 @Builder
 public class Trip {
     LocalDate tripStartDate;
