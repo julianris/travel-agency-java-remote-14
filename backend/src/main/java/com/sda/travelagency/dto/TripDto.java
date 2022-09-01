@@ -28,11 +28,16 @@ public record TripDto(
 
         String currency,
 
-        TransportType typOfTransports,
+        TransportType typeOfTransports,
+
         SecurityRulesDto securityRules,
+
         PaymentType paymentType,
+
         MealType mealType,
+
         HotelFacilitiesDto hotelFacilities,
+
         List<String> photos
 ) {
 
