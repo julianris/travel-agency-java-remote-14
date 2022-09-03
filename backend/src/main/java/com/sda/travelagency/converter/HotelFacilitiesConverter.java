@@ -6,14 +6,13 @@ import org.hibernate.cfg.NotYetImplementedException;
 import org.springframework.stereotype.Component;
 
 
-// TODO - implement
 @Component
 public class HotelFacilitiesConverter implements Converter<HotelFacilities, HotelFacilitiesDto> {
 
     @Override
     public HotelFacilitiesDto fromEntityToDto(HotelFacilities entity) {
-        throw new NotYetImplementedException();
-        //      return null;
+        return null;
+
     }
 
     @Override
