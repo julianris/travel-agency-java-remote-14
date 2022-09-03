@@ -5,7 +5,6 @@ import com.sda.travelagency.entity.SecurityRules;
 import org.springframework.stereotype.Component;
 
 
-//TODO - implement interface
 @Component
 public class SecurityRulesConverter implements Converter<SecurityRules, SecurityRulesDto>{
 

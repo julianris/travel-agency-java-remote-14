@@ -21,7 +21,7 @@ public class Trip {
 
     Price tripPrice;
 
-    TransportType typOfTransports;
+    TransportType typeOfTransport;
 
     SecurityRules securityRules;
 
