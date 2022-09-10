@@ -8,19 +8,25 @@ import {MatCardModule} from "@angular/material/card";
 import {HttpClientModule} from "@angular/common/http";
 import {MatButtonModule} from "@angular/material/button";
 import { HeaderComponent } from './components/header/header.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import { AboutusComponent } from './components/aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TripListComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavigationComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
