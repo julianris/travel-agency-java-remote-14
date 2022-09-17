@@ -25,7 +25,7 @@ public class Trip {
 
     LocalDate tripEndDate;
 
-
+    @OneToOne
     Destination destination;
 
     @Embedded
@@ -43,7 +43,7 @@ public class Trip {
     @Enumerated(EnumType.STRING)
     MealType mealType;
 
-    @Transient
+    @OneToOne
     HotelFacilities hotelFacilities;
 
     @ElementCollection
