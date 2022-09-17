@@ -25,8 +25,7 @@ public class Trip {
 
     LocalDate tripEndDate;
 
-    // dirty fix - just ignore that field
-    @Transient
+
     Destination destination;
 
     @Embedded
@@ -49,6 +48,7 @@ public class Trip {
 
     @ElementCollection
     @CollectionTable(name = "PHOTOS")
+            @Column(name = "photo")
     List<String> photos;
 
 }
