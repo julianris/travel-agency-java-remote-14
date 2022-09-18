@@ -11,10 +11,10 @@ import java.util.List;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor (access = AccessLevel.PRIVATE)
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder
 @Entity
-@Table(name="TRIPS")
+@Table(name = "TRIPS")
 public class Trip {
 
     @Id
@@ -48,7 +48,6 @@ public class Trip {
 
     @ElementCollection
     @CollectionTable(name = "PHOTOS", joinColumns = @JoinColumn(name = "ID_OF_TRIP"))
-            @Column(name = "photo")
+    @Column(name = "photo")
     List<String> photos;
-
 }

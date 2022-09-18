@@ -49,6 +49,7 @@ public class TripConverter implements Converter<Trip, TripDto> {
         var tripPrice = new Price(new BigDecimal(tripDto.cost()), tripDto.currency());
         var securityRulesEntity = securityRulesConverter.fromDtoToEntity(tripDto.securityRules());
         var hotelFacilitiesEntity = hotelFacilitiesConverter.fromDtoToEntity(tripDto.hotelFacilities());
+
         return Trip.builder()
                 .tripStartDate(tripDto.tripStartDate())
                 .tripEndDate(tripDto.tripEndDate())
@@ -62,6 +63,4 @@ public class TripConverter implements Converter<Trip, TripDto> {
                 .photos(tripDto.photos())
                 .build();
     }
-
-
 }
