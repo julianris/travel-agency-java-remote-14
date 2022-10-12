@@ -1,0 +1,8 @@
+.example-card{
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/eb/HI_mk_logo_hiltonbrandlogo.jpg');
+  background-size: cover;
+}
